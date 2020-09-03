@@ -31,6 +31,7 @@ class Song
   end
 
   def to_param
+    #sub and gsub perform replacement of the first and all matches respectively.
     name.downcase.gsub(' ', '-')
   end
 end
